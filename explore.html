@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Explore planets</title>
+        <meta name="Explore" content="Page about ecploring planets">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <a class = "skip" href="#skip2">Skip to Main Content</a>
+    <header>
+      <nav>
+        <img src="images/saturn.png" width="60" alt="small picture of Saturn" id = "logo">
+        <ul class="navlinks">
+          <li class="navitem"><a href="credits.html">Credits</a></li>
+          <li class="navitem"><a href="solarsystemdetail.html">Planets Details</a></li>
+          <li class="navitem"><a href="explore.html">Explore</a></li>
+        </ul>
+        </nav>
+        <br>
+    </header>
+    <main id="skip2">
+        <h1 id="explore">Let's explore the solar system!</h1>
+        <div class="exploreInput">
+            <label for="inputText" class="exploreInput">Name:  </label>
+            <input type="text" id="inputText" name="name" placeholder="Enter name"><br>
+            <p class="exploreInput"> Click the button to see the Sun and the planets.</p>
+            <button onclick="myFunction()">Try it</button>
+            <p id="showPlanets"></p>
+            <script>
+            function myFunction() {
+                let x = document.getElementById("inputText").value;
+                document.getElementById("showPlanets").innerHTML = x + " explores the solar system!";
+                document.getElementById("planets").style.display = "block";
+                }
+                </script>
+        </div>
+        <div class="column_planets" id="planets">
+            <div class="sun1">
+                <h2 class="planeth2">Sun</h2>
+                <img src="images/sun.png" width="850" alt="Photo of the Sun">
+            </div>
+            <div class="mercury1">
+                <h2 class="planeth2">Mercury</h2>
+                <img class="mercurymove" src="images/mercury.png" width="150" alt="Photo of Mercury">
+            </div>
+            <div class="venus1">
+                <h2 class="planeth2">Venus</h2>
+                <img src="images/venus.png" width="250" alt="Photo of Venus">
+            </div>
+            <div class="earth1">
+                <h2 class="planeth2">Earth</h2>
+                <img src="images/earth.png" width="250" alt="Photo of the Earth">
+            </div>
+            <div class="mars1">
+                <h2 class="planeth2">Mars</h2>
+                <img src="images/mars.png" width="250" alt="Photo of Mars">
+            </div>
+            <div class="jupiter1">
+                <h2 class="planeth2">Jupiter</h2>
+                <img src="images/jupiter.png" width="550" alt="Photo of Jupiter">
+            </div>
+            <div class="saturn1">
+                <h2 class="planeth2">Saturn</h2>
+                <img src="images/saturn.png" width="450" alt="Photo of Saturn">
+            </div>
+            <div class="uranus1">
+                <h2 class="planeth2">Uranus</h2>
+                <img src="images/uranus.png" width="450" alt="Photo of Uranus">
+            </div>
+            <div class="neptune1">
+                <h2 class="planeth2">Neptune</h2>
+                <img src="images/neptune.png" width="450" alt="Photo of Neptune">
+            </div>
+            <div class="pluto1">
+                <h2 class="planeth2">Pluto (Wannabe planet)</h2>
+                <img src="images/pluto.png" width="150" alt="Photo of Pluto">
+            </div>
+        </div>
+    </main>
+</body>
+    <footer class="firstfooter">
+        <p class="thanks"><br>Thank you for exploring!</p>
+        <p class="thanks">SI 539 Final Project &copy;<br></p>
+        <a href="#top" class="tops thanks">Back to Top</a>
+    </footer>
+</html>

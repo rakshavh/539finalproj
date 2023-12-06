@@ -1,0 +1,218 @@
+body{
+    /**background-image: url("../images/background2.jpg");**/
+    background: linear-gradient( rgba(0,21,36,1) 0%, rgba(9,101,121,1) 35%);
+    /**background-size: contain;**/
+    margin: 1.8rem;
+}
+
+h1, h2{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    text-align: left;
+    color: aliceblue;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.tops{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+    margin-left: 1.2rem;
+  }
+
+nav {
+    margin-top: 17px;
+  }
+
+.navitem a{
+    padding: 10px;
+    margin-top: 3rem;
+    color: #cbe3e3;
+  }
+  
+.navitem a:hover, a:focus{
+    color: #cbe3e3;
+    text-decoration: underline;
+  }
+
+
+a:visited {
+    color: #50C7C7;
+  }
+
+li {
+    float: right;
+  }
+
+#logo{
+    float: left;
+    margin-top: -19px;
+}
+
+li a {
+    display: inline;
+    text-align: right;
+    padding: 0.9rem 1rem;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-right: 1.5rem;
+  }
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#planets{
+    display: none;
+}
+
+button {
+    background-color: #7ef4c9; /* Green */
+  border: none;
+  color: rgb(40, 39, 39);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  width: 20rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+}
+
+.grid{
+    display: grid;
+    margin: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.grid div {
+    border-right: 0.8px solid rgba(185, 148, 148, 0.6);
+    border-bottom: 0.8px solid rgba(185, 148, 148, 0.6);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(5px);
+    
+}
+
+.sun1{
+    float: center;
+}
+.venus1, .mars1, .saturn1, .neptune1{
+    margin-left: 225px;
+    float: right;
+}
+
+.jupiter1, .uranus1{
+    margin-right: 90px;
+    float: left;
+}
+.mercury1, .earth1 {
+    margin-right:30px;
+    float:left;
+}
+
+.pluto1{
+    margin-left: -15;
+}
+
+.exploreInput{
+    margin-left: 3rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: aliceblue;
+}
+
+#inputText{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: grey;
+}
+
+.ref{
+    line-height: 1.2;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2rem;
+}
+@media screen and (min-width: 600px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 2rem;
+    }
+
+    .grid div:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 20px 20px 30px rgba(146, 144, 144, 0.5);
+        top: -4px;
+        transform: scale(1.02);
+        transform-origin: 50% 50%;
+      }
+
+    .venus1, .mars1, .saturn1, .neptune1, .jupiter1, .uranus1,.mercury1, .earth1, .pluto1 {
+        float: inherit;
+        margin: auto;
+    }
+
+    .exploreInput, .thanks, #showPlanets{
+        margin-left: 1rem;
+        margin-top: 4rem;
+        text-align: center;
+        line-height: 2.5;
+        font-size: 1.7rem;
+    }
+
+    .firstfooter{
+        display: none;
+    }
+
+    /**.mercurymove{
+        animation: planetmove 5s infinite;
+    }
+
+    @keyframes planetmove {
+            from {right: 0px;}
+            to {left: 200px;}
+          }**/
+}
+
+
